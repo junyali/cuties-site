@@ -1,19 +1,16 @@
 @import "tailwindcss";
+@import "@catppuccin/tailwindcss/mocha.css";
 
 :root {
   font-family: "IBM Plex Sans", "Helvetica", system-ui, -apple-system, Avenir, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: light;
   background-color: #ea76cb;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  min-height: 100vh;
 }

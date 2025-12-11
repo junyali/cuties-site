@@ -3,7 +3,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <div>
+      <div className="latte bg-ctp-base min-h-screen">
         <p>
           meow.
         </p>
