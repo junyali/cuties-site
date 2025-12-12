@@ -1,5 +1,6 @@
 import './App.css';
 import { Divider } from './components/Divider';
+import { WaveText } from './components/WaveText';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           />
         </div>
         <div>
-          <h1 className="text-4xl font-bold text-ctp-pink">junyaverse</h1>
+          <WaveText text="junyaverse" />
           <p className="text-sm text-ctp-subtext0 mt-1">ෆ ˖ ⁺ ☁⋆ ੭</p>
         </div>
       </header>
