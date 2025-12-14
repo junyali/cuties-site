@@ -5,6 +5,7 @@ import { RouterProvider } from 'react-router/dom';
 import './index.css';
 import App from './App.tsx';
 import { Projects } from './routes/Projects.tsx';
+import { Contact } from './routes/Contact.tsx';
 import { NotFound } from './routes/NotFound.tsx';
 
 const router = createBrowserRouter([
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/contact',
-    element: <App />
+    element: <Contact />
   },
   {
     path: '*',
