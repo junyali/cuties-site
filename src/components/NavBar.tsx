@@ -1,0 +1,17 @@
+import { NavItem } from './NavItem';
+
+import HomeImg from '/src/assets/nav_home.png';
+import ProjectsImg from '/src/assets/nav_projects.png';
+import ContactImg from '/src/assets/nav_contact.png';
+
+export function NavBar() {
+	return (
+		<nav className="max-w-4xl mx-auto px-6 py-12">
+			<div className="flex items-center justify-center gap-8 md:gap-16 lg:gap-24">
+				<NavItem image={HomeImg} label="Home" href="/" />
+				<NavItem image={ProjectsImg} label="Projects" href="/projects" />
+				<NavItem image={ContactImg} label="Contact" href="/contact" />
+			</div>
+		</nav>
+	);
+}

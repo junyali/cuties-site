@@ -1,6 +1,7 @@
 import './App.css';
 import { Divider } from './components/Divider';
 import { WaveText } from './components/WaveText';
+import { NavBar } from './components/NavBar';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <p className="text-sm text-ctp-subtext0 mt-1">ෆ ˖ ⁺ ☁⋆ ੭</p>
         </div>
       </header>
+      <Divider/>
+      <NavBar/>
       <Divider/>
       <section className="max-w-5xl mx-auto px-6 py-20 relative">
         <div className="relative">
