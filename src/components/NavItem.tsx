@@ -1,13 +1,15 @@
+import { Link } from 'react-router';
+
 interface Properties {
 	image: string;
 	label: string;
-	href: string;
+	to: string;
 }
 
-export function NavItem({image, label, href}: Properties) {
+export function NavItem({image, label, to}: Properties) {
 	return (
-		<a
-			href={href}
+		<Link
+			to={to}
 			className="group flex flex-col items-center gap-2 transition-all duration-300 hover:-translate-y-1"
 		>
 			<div className="relative">
@@ -22,6 +24,6 @@ export function NavItem({image, label, href}: Properties) {
 			<span className="text-sm md:text-base font-bold lg:text-lg text-ctp-subtext1 group-hover:text-ctp-pink transition-colors duration-300">
 				{label}
 			</span>
-		</a>
+		</Link>
 	);
 }
