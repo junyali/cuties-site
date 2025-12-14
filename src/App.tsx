@@ -19,11 +19,11 @@ function App() {
             <div className="leading-relaxed">
               <div className="relative inline-block transition-transform duration-300 ease-in-out hover:scale-110 hover:-rotate-4">
                 <div className="absolute -inset-4 bg-gradient-to-r from-ctp-pink via-ctp-mauve to-ctp-lavender blur-lg opacity-20"></div>
-                <h1 className="text-5xl text-ctp-pink-400 font-bold">
+                <h1 className="text-3xl md:text-5xl text-ctp-pink-400 font-bold">
                   hewwo!
                 </h1>
               </div>
-              <h2 className="text-3xl font-bold">
+              <h2 className="text-xl md:text-3xl font-bold">
                 <span className="text-ctp-pink-200">i'm </span>
                 <span className="text-ctp-pink-400/80">junya </span>
                 <span className="text-ctp-pink-200">(</span>
@@ -33,10 +33,10 @@ function App() {
                 <span className="text-ctp-pink-200">)</span>
                 <span className="text-ctp-pink-200"> :3</span>
               </h2>
-              <p className="text-2xl">
+              <p className="text-lg md:text-2xl">
                 <span className="text-ctp-pink/90">welcome to my lil corner of the internet hehe~</span>
               </p>
-              <p className="text-2xl">
+              <p className="text-lg md:text-2xl">
                 <span className="text-ctp-pink/90">just a silly kitty making stuff mraow :3</span>
               </p>
             </div>
@@ -45,17 +45,17 @@ function App() {
             <div className="text-right leading-relaxed">
               <div className="relative inline-block transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-4">
                 <div className="absolute -inset-4 bg-gradient-to-r from-ctp-pink via-ctp-mauve to-ctp-lavender blur-lg opacity-20"></div>
-                <h2 className="text-3xl text-ctp-pink-200 font-bold">
+                <h2 className="text-xl md:text-3xl text-ctp-pink-200 font-bold">
                   about me
                 </h2>
               </div>
-              <p className="text-2xl">
+              <p className="text-lg md:text-2xl">
                 <span className="text-ctp-pink/90">i've been programming since 2018 and i love all things tech!</span>
               </p>
-              <p className="text-2xl">
+              <p className="text-lg md:text-2xl">
                 <span className="text-ctp-pink/90">you might find me playing games or travelling around or organising events</span>
               </p>
-              <p className="text-2xl">
+              <p className="text-lg md:text-2xl">
                 <span className="text-ctp-pink/90">feel free to get in </span>
                 <Link
                   to="/contact"
@@ -71,15 +71,15 @@ function App() {
             <div className="leading-relaxed">
               <div className="relative inline-block transition-transform duration-300 ease-in-out hover:scale-110 hover:-rotate-4">
                 <div className="absolute -inset-4 bg-gradient-to-r from-ctp-pink via-ctp-mauve to-ctp-lavender blur-lg opacity-20"></div>
-                <h2 className="text-3xl text-ctp-pink-200 font-bold">
+                <h2 className="text-xl md:text-3xl text-ctp-pink-200 font-bold">
                   my hobbies
                 </h2>
               </div>
-              <p className="text-2xl">
+              <p className="text-lg md:text-2xl">
                 <span className="text-ctp-pink/90">outside of programming and being silly...</span>
               </p>
               <div className="space-y-1">
-                <h3 className="text-2xl font-semibold text-ctp-mauve">i like playing games - all sorts!</h3>
+                <h3 className="text-xl md:text-2xl font-semibold text-ctp-mauve">i like playing games - all sorts!</h3>
                 <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-ctp-pink/20 border border-ctp-pink/30 text-ctp-pink text-sm">
                   osu!
@@ -95,7 +95,7 @@ function App() {
                 </span>
                 </div>
               </div>
-              <p className="text-2xl">
+              <p className="text-lg md:text-2xl">
                 <span className="text-ctp-pink/90">i also like playing theme songs on the piano and uhh.. sleeping :3</span>
               </p>
             </div>
