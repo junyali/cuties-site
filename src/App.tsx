@@ -10,7 +10,7 @@ function App() {
       <Divider/>
       <NavBar/>
       <Divider/>
-      <section className="max-w-5xl mx-auto px-6 py-20 relative">
+      <section className="max-w-5xl mx-auto px-6 py-8 relative">
         <div className="relative">
           <div className="absolute -inset-4 bg-gradient-to-r from-ctp-pink via-ctp-mauve to-ctp-lavender blur-lg opacity-20"></div>
           <div className="relative bg-ctp-mantle/50 backdrop-blur-lg border-2 border-ctp-overlay2/60 ring-ctp-mauve/30 p-8 shadow-xl">

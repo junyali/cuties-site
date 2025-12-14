@@ -11,7 +11,7 @@ export function Header() {
 	const location = useLocation();
 	const subtitle = pages[location.pathname] || 'lost... ╚(•⌂•)╝';
 	return (
-		<header className="max-w-7xl mx-auto flex items-center justify-center gap-6 px-6 py-16">
+		<header className="max-w-7xl mx-auto flex items-center justify-center gap-6 px-6 py-8">
 			<div className="relative">
 				<div className="absolute -inset-4 bg-gradient-to-r from-ctp-pink via-ctp-mauve to-ctp-lavender rounded-full blur-2xl opacity-30"></div>
 				<img
