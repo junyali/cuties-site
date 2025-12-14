@@ -56,8 +56,34 @@ export function Konami() {
 						/>
 					</div>
 				</div>
-				<div className="w-full h-full flex items-center justify-center p-12">
-
+				<div className="w-full h-full flex items-center justify-center">
+					<div
+						className="w-full h-full relative"
+						style={{
+							maxWidth: '953px',
+							maxHeight: '620px',
+							aspectRatio: '953/620'
+						}}
+					>
+						<iframe
+							src="https://itch.io/embed-upload/14837022?color=72A11D"
+							className="absolute border-none z-0"
+							style={{
+								left: '22.03%',
+								top: '7.74%',
+								width: '33.67%',
+								height: '39.19%'
+							}}
+							title="Game"
+							allowFullScreen
+						/>
+						<img
+							src="/macintosh.png"
+							alt=""
+							className="relative w-full h-full z-10 pointer-events-none"
+							style={{ imageRendering: 'crisp-edges' }}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
