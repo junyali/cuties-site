@@ -29,7 +29,7 @@ export function Project({ project }: { project: Project }) {
 						</h3>
 						<div className="flex items-center gap-2 flex-shrink-0">
 							{project.status && (
-								<span className={`px-3 py-1 rounded-full text-xs font-semibold border ${statusColours[project.status]}`}>
+								<span className={`px-3 py-1 rounded-lg text-xs font-semibold border ${statusColours[project.status]}`}>
 									{project.year}
 								</span>
 							)}
