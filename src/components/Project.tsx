@@ -18,7 +18,7 @@ export function Project({ project }: { project: Project }) {
 						<img
 							src={project.image}
 							alt={project.title}
-							className="relative w-full h-48 object-coer rounded-lg border-2 border-ctp-overlay0/30"
+							className="relative w-full h-48 bg-ctp-base/50 object-cover rounded-lg border-2 border-ctp-overlay0/30"
 						/>
 					</div>
 				</div>
@@ -27,7 +27,7 @@ export function Project({ project }: { project: Project }) {
 						<h3 className="text-2xl font-bold text-ctp-pink">
 							{project.title}
 						</h3>
-						<div className="flex items0center gap-2 flex-shrink-0">
+						<div className="flex items-center gap-2 flex-shrink-0">
 							{project.status && (
 								<span className={`px-3 py-1 rounded-full text-xs font-semibold border ${statusColours[project.status]}`}>
 									{project.year}
