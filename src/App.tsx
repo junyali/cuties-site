@@ -5,10 +5,12 @@ import { Divider } from './components/Divider';
 import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 import { Section88x31 } from './components/Section88x31';
+import { Konami } from './components/Konami';
 
 function App() {
   return (
     <div className="latte min-h-screen bg-ctp-base text-ctp-text">
+      <Konami/>
       <Header/>
       <Divider/>
       <NavBar/>
