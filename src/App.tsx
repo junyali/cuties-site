@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Divider } from './components/Divider';
 import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
+import { Section88x31 } from './components/Section88x31';
 
 function App() {
   return (
@@ -99,9 +100,7 @@ function App() {
           </div>
         </div>
       </section>
-      <div className="py-32">
-        {/*filler thing*/}
-      </div>
+      <Section88x31/>
       <Divider/>
       <Footer/>
     </div>
