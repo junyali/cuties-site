@@ -16,6 +16,7 @@ export function NavItem({image, label, href}: Properties) {
 					src={image}
 					alt={label}
 					className="relative w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 transition-transform duration-300 group-hover:scale-110"
+					style={{ imageRendering: 'pixelated' }}
 				/>
 			</div>
 			<span className="text-sm md:text-base font-bold lg:text-lg text-ctp-subtext1 group-hover:text-ctp-pink transition-colors duration-300">
