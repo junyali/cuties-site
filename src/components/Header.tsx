@@ -21,7 +21,10 @@ export function Header() {
 				/>
 			</div>
 			<div>
-				<WaveText text="junyaverse" />
+				<WaveText
+					text="junyaverse"
+					palette="pastel"
+				/>
 				<p className="text-sm text-ctp-subtext0 mt-1">{subtitle}</p>
 			</div>
 		</header>
