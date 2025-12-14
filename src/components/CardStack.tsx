@@ -40,8 +40,11 @@ export function CardStack() {
 	const [isAnimating, setIsAnimating] = useState(false);
 	const [animationClass, setAnimationClass] = useState('');
 	const sectionRef = useRef<HTMLElement>(null);
+	const scrollCooldown = useRef(false);
 
 	const handleWheel = useCallback((e: WheelEvent) => {
+		if (scrollCooldown.current || isAnimating) return;
+
 		const isScrollingDown = e.deltaY > 0;
 		const isScrollingUp = e.deltaY < 0;
 
@@ -50,6 +53,7 @@ export function CardStack() {
 		}
 
 		e.preventDefault();
+		scrollCooldown.current = true;
 		if (isScrollingDown && currentCard < cards.length - 1) {
 			setAnimationClass('slide-out-left');
 			setIsAnimating(true);
@@ -77,7 +81,11 @@ export function CardStack() {
 				}, 400);
 			}, 400);
 		}
-	}, [currentCard]);
+
+		setTimeout(() => {
+			scrollCooldown.current = false;
+		}, 400);
+	}, [currentCard, isAnimating]);
 	
 	useEffect(() => {
 		const section = sectionRef.current;
