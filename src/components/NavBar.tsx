@@ -1,8 +1,8 @@
 import { NavItem } from './NavItem';
 
-import HomeImg from '/src/assets/nav_home.png';
-import ProjectsImg from '/src/assets/nav_projects.png';
-import ContactImg from '/src/assets/nav_contact.png';
+import HomeImg from '../assets/nav_home.png';
+import ProjectsImg from '../assets/nav_projects.png';
+import ContactImg from '../assets/nav_contact.png';
 
 export function NavBar() {
 	return (
