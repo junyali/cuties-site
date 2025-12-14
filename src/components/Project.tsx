@@ -1,5 +1,5 @@
 import { type Project } from '../utilities/projects.ts';
-import {ProjectLink} from "./ProjectLink.tsx";
+import { ProjectLink } from './ProjectLink';
 
 export function Project({ project }: { project: Project }) {
 	const statusColours = {

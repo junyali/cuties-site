@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router';
-import { WaveText } from './WaveText.tsx';
+import { WaveText } from './WaveText';
 
 const pages: Record<string, string> = {
 	'/': 'home sweet home ❀◕ ‿ ◕❀',

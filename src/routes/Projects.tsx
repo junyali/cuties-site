@@ -1,8 +1,8 @@
-import { Header } from '../components/Header.tsx';
-import { Divider } from '../components/Divider.tsx';
-import { NavBar } from '../components/NavBar.tsx';
-import { Footer } from '../components/Footer.tsx';
-import { Project } from '../components/Project.tsx';
+import { Header } from '../components/Header';
+import { Divider } from '../components/Divider';
+import { NavBar } from '../components/NavBar';
+import { Footer } from '../components/Footer';
+import { Project } from '../components/Project';
 import { projects } from '../utilities/projects.ts';
 import { Konami } from '../components/Konami';
 

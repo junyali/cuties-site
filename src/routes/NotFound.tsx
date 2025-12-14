@@ -1,7 +1,7 @@
-import { Header } from '../components/Header.tsx';
-import { Divider } from '../components/Divider.tsx';
-import { NavBar } from '../components/NavBar.tsx';
-import { Footer } from '../components/Footer.tsx';
+import { Header } from '../components/Header';
+import { Divider } from '../components/Divider';
+import { NavBar } from '../components/NavBar';
+import { Footer } from '../components/Footer';
 import { Konami } from '../components/Konami';
 
 export function NotFound() {
