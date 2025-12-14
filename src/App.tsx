@@ -7,7 +7,7 @@ import { Footer } from './components/Footer';
 import { Section88x31 } from './components/Section88x31';
 import { Konami } from './components/Konami';
 
-function App() {
+export function App() {
   return (
     <div className="latte min-h-screen bg-ctp-base text-ctp-text">
       <Konami/>
@@ -110,6 +110,3 @@ function App() {
     </div>
   )
 }
-
-// @ts-expect-error shush
-export default App

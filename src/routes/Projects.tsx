@@ -4,10 +4,12 @@ import { NavBar } from '../components/NavBar.tsx';
 import { Footer } from '../components/Footer.tsx';
 import { Project } from '../components/Project.tsx';
 import { projects } from '../utilities/projects.ts';
+import { Konami } from '../components/Konami';
 
 export function Projects() {
 	return (
 		<div className="latte min-h-screen bg-ctp-base text-ctp-text">
+			<Konami/>
 			<Header/>
 			<Divider/>
 			<NavBar/>

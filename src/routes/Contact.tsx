@@ -2,6 +2,7 @@ import { Header } from '../components/Header.tsx';
 import { Divider } from '../components/Divider.tsx';
 import { NavBar } from '../components/NavBar.tsx';
 import { Footer } from '../components/Footer.tsx';
+import { Konami } from '../components/Konami';
 
 export function Contact() {
 	const contacts =[
@@ -13,6 +14,7 @@ export function Contact() {
 
 	return (
 		<div className="latte min-h-screen bg-ctp-base text-ctp-text">
+			<Konami/>
 			<Header/>
 			<Divider/>
 			<NavBar/>
