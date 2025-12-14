@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router';
 import { RouterProvider } from 'react-router/dom';
 import './index.css';
 import App from './App.tsx';
+import { NotFound } from './routes/NotFound.tsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <App />
+  },
+  {
+    path: '*',
+    element: <NotFound/>
   }
 ]);
 
