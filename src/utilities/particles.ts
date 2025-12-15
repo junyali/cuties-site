@@ -176,3 +176,5 @@ export function createParticlesBackground(): void {
 
 	requestAnimationFrame(animateParticles)
 }
+
+createParticlesBackground()

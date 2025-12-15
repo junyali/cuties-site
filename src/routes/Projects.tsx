@@ -1,17 +1,12 @@
-import { useEffect } from 'react';
 import { Header } from '../components/Header';
 import { Divider } from '../components/Divider';
 import { NavBar } from '../components/NavBar';
 import { Footer } from '../components/Footer';
 import { Project } from '../components/Project';
 import { projects } from '../utilities/projects.ts';
-import { createParticlesBackground } from '../utilities/particles.ts';
 import { Konami } from '../components/Konami';
 
 export function Projects() {
-	useEffect(() => {
-		createParticlesBackground();
-	}, []);
 	return (
 		<div className="latte min-h-screen bg-ctp-base text-ctp-text">
 			<Konami/>
