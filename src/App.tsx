@@ -1,5 +1,7 @@
 import './App.css';
 import { Link } from 'react-router';
+import { useEffect } from 'react';
+import { createParticlesBackground } from './utilities/particles.ts';
 import { Header } from './components/Header';
 import { Divider } from './components/Divider';
 import { NavBar } from './components/NavBar';
@@ -8,6 +10,9 @@ import { Section88x31 } from './components/Section88x31';
 import { Konami } from './components/Konami';
 
 export function App() {
+  useEffect(() => {
+    createParticlesBackground();
+  }, []);
   return (
     <div className="latte min-h-screen bg-ctp-base text-ctp-text">
       <Konami/>

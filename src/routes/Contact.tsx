@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { createParticlesBackground } from '../utilities/particles.ts';
 import { Header } from '../components/Header';
 import { Divider } from '../components/Divider';
 import { NavBar } from '../components/NavBar';
@@ -11,6 +13,10 @@ export function Contact() {
 		{ name: "Email", hover: "cuties[-at-]kafka.moe", href: null },
 		{ name: "Instagram", hover: "_junyanya", href: "https://instagram.com/_junyanya" }
 	]
+
+	useEffect(() => {
+		createParticlesBackground();
+	}, []);
 
 	return (
 		<div className="latte min-h-screen bg-ctp-base text-ctp-text">
