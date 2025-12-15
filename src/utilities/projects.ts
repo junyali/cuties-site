@@ -18,6 +18,48 @@ export interface Project {
 export const projects: Project[] = [
     // all projects go here basically :p
     {
+        title: "Slack Pfp Rotator",
+        description: "A simple Python script that 'rotates' (updates) your profile picture on Slack every interval.",
+        image: "https://a.slack-edge.com/38f0e7c/marketing/img/nav/logo.svg",
+        links: [
+            { type: "github", url: "https://github.com/junyali/slack-pfp-rotator", label: "View Source" }
+        ],
+        status: "ongoing",
+        year: 2025
+    },
+    {
+        title: "warp-tui",
+        description: "A terminal user interface frontend for managing Cloudflare Warp (warp-cli) connections on Linux.",
+        image: "https://github.com/junyali/warp-tui/raw/master/example/menu.png?raw=true",
+        links: [
+            { type: "github", url: "https://github.com/junyali/warp-tui", label: "View Source" }
+        ],
+        status: "ongoing",
+        year: 2025
+    },
+    {
+        title: "Slack Channel Joiner",
+        description: "A customisable Slack bot to handle join requests for private channels on your Slack workspace, workflow-free.",
+        image: "https://a.slack-edge.com/38f0e7c/marketing/img/nav/logo.svg",
+        links: [
+            { type: "github", url: "https://github.com/junyali/slackbot-channel-joiner", label: "View Source" }
+        ],
+        status: "ongoing",
+        year: 2025
+    },
+    {
+        title: "Unfaircraft",
+        description: "Unfaircraft is a Minecraft mod that makes the game... well, unfair. This mod introduces subtle (and not-so-subtle) modified vanilla behaviours that makes the game UNFAIR! You shall feel frustration, pain, and suffering - but the challenge is on!",
+        image: "https://github.com/junyali/Unfaircraft/blob/main/src/main/resources/icon.png?raw=true",
+        links: [
+            { type: "github", url: "https://github.com/junyali/Unfaircraft/", label: "View Source" },
+            { type: "download", url: "https://modrinth.com/mod/unfaircraft", label: "Download on Modrinth" },
+            { type: "download", url: "https://www.curseforge.com/minecraft/mc-mods/unfaircraft", label: "Download on Curseforge" }
+        ],
+        status: "completed",
+        year: 2025
+    },
+    {
         title: "Arsenal and Anvil",
         description: "A QoL Minecraft mod for NeoForge 1.21.1 aimed to add a variety of new weapons and tools for all tiers!",
         image: "https://github.com/junyali/arsenalandanvil/blob/main/preview/demo_1.png?raw=true",
@@ -58,6 +100,16 @@ export const projects: Project[] = [
         links: [
             { type: "github", url: "https://github.com/junyali/flourish", label: "View Source" },
             { type: "demo", url: "https://junyali.itch.io/flourish", label: "Download Game" }
+        ],
+        status: "completed",
+        year: 2025
+    },
+    {
+        title: "Perilous Plates",
+        description: "A Roblox game inspired by Plates of Fate and similar genres, built with Rojo tooling.",
+        image: "https://github.com/junyali/perilous-plates/raw/main/demos/1.png?raw=true",
+        links: [
+            { type: "github", url: "https://github.com/junyali/perilous-plates", label: "View Source" }
         ],
         status: "completed",
         year: 2025
