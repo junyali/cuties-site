@@ -73,6 +73,9 @@ export function Konami() {
 									aria-label="maximise"
 								/>
 							</div>
+							<div className="flex-1 text-center text-sm font-medium text-ctp-text">
+								junyali.itch.io/jumper
+							</div>
 						</div>
 						<div className="w-full h-full flex items-center justify-center">
 							<div
