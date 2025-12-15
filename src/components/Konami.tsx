@@ -7,8 +7,15 @@ const konami_code = [
 export function Konami() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [sequence, setSequence] = useState<string[]>([]);
+	const [imageLoaded, setImageLoaded] = useState(false);
 	const iframeRef = useRef<HTMLIFrameElement | null>(null);
 	const audioRef = useRef<HTMLAudioElement | null>(null);
+
+	useEffect(() => {
+		const img = new Image();
+		img.src = '/macintosh.png';
+		img.onload = () => setImageLoaded(true);
+	}, []);
 
 	useEffect(() => {
 		const handleKeyPress = (e: KeyboardEvent) => {
@@ -27,17 +34,19 @@ export function Konami() {
 	}, [sequence]);
 
 	useEffect(() => {
-		if (audioRef.current) {
-			audioRef.current.currentTime = 0;
-			audioRef.current.play().catch(error => console.error(error));
-		}
-
-		setTimeout(() => {
-			if (iframeRef.current) {
-				iframeRef.current.focus();
+		if (isOpen && imageLoaded) {
+			if (audioRef.current) {
+				audioRef.current.currentTime = 0;
+				audioRef.current.play().catch(error => console.error(error));
 			}
-		}, 100);
-	}, [isOpen])
+
+			setTimeout(() => {
+				if (iframeRef.current) {
+					iframeRef.current.focus();
+				}
+			}, 100);
+		}
+	}, [isOpen, imageLoaded])
 
 	if (!isOpen) return null;
 
@@ -86,6 +95,12 @@ export function Konami() {
 									aspectRatio: '953/620'
 								}}
 							>
+								<img
+									src="/macintosh.png"
+									alt=""
+									className="relative w-full h-full z-10 pointer-events-none"
+									style={{ imageRendering: 'crisp-edges' }}
+								/>
 								<iframe
 									ref={iframeRef}
 									src="https://itch.io/embed-upload/14837022?color=72A11D"
@@ -98,12 +113,6 @@ export function Konami() {
 									}}
 									title="Game"
 									allowFullScreen
-								/>
-								<img
-									src="/macintosh.png"
-									alt=""
-									className="relative w-full h-full z-10 pointer-events-none"
-									style={{ imageRendering: 'crisp-edges' }}
 								/>
 							</div>
 						</div>
